@@ -1,0 +1,22 @@
+<section class="jumbotron">
+  <h1>Smatly Built</h1>
+  <p class="lead">
+    <img src="assets/images/browsersync.png" alt="I am Home"><br>
+    This is Home Page
+  </p>
+  <md-button class="md-raised animated infinite" ng-click="home.showToastr()">Show Toastr</md-button>
+</section>
+
+<div class="my-card-container" layout-align="center">
+  <md-card ng-repeat="__l in home.lists">
+    <md-card-content>
+      <img class="pull-right" ng-src="assets/images/angular-material.png" alt="materials">
+      <h3 class="md-title">{{$index + 1}}</h3>
+      <p>{{ $index + 1 }}
+        - Desciption</p>
+    </md-card-content>
+    <div class="md-action-buttons">
+      <md-button ui-sref="site.home">Click me</md-button>
+    </div>
+  </md-card>
+</div>
